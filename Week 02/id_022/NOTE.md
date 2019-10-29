@@ -134,6 +134,14 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 ---
 
 ## 2. 学习总结
+* 时间复杂度分析
+
+|  |prepend|append|lookup|insert|delete
+|---|---|---|---|---|---|
+|HashMap|||O(1)|O(1)|O(1)|
+|BST|||O(logn)|O(logn)|O(logn)|
+
+
 * 算法应用
     * 如果能够找到最近重复子问题，使用递归解决
     * 排列组合问题，可以转化为状态树的遍历
@@ -166,5 +174,3 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     4. 组装下层返回结构
     5. 清理当前层状态
     ```
-
-
